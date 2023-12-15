@@ -31,7 +31,10 @@ public class Main {
         };
 */
 
-        Collections.sort(emp,( e1, e2) -> e1.getName().compareTo(e2.getName()));
+//        Collections.sort(emp,( e1, e2) -> e1.getName().compareTo(e2.getName()));
+
+
+        Collections.sort(emp,Comparator.comparing(Employee::getName));
 
         System.out.println(emp);
 

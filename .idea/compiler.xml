@@ -10,5 +10,8 @@
         <module name="Java-8" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Java-8" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
