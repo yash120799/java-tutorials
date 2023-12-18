@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Arrays;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -16,7 +18,18 @@ public class SteamExample {
 //        Stream.of("Java","JavaScript","Go","Python").filter(x-> x.contains("J")).map(String :: toUpperCase)
 //                .forEach(System.out::println);
 
-        Stream.generate(Math::random).limit(4).forEach(System.out::println);
+//        Stream.generate(Math::random).limit(4).forEach(System.out::println);
+
+//        System.out.println(Arrays.asList("Java","JavaScript","Go","Python").stream().
+//        filter(x ->x.contains("J")).collect(Collectors.toList()));
+
+        System.out.println(Arrays.asList("Java","JavaScript","Go","Python","Java").stream()
+                .filter(x -> x.contains("J")).collect(Collectors.toList()));
+
+
+        System.out.println(Arrays.asList("Java","JavaScript","Go","Python","Java").stream()
+                .filter(x -> x.contains("J")).collect(Collectors.toSet()));
+
     }
 }
 
