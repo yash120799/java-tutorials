@@ -1,8 +1,11 @@
 package org.example;
 
 import javax.security.auth.Subject;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -33,12 +36,30 @@ public class SteamExample {
                 .filter(x -> x.contains("J")).collect(Collectors.toSet()));
 
 
-        List<Student> list = List.of(new Student("Yash", 80,"Maths"),
+      /*  List<Student> list = List.of(new Student("Yash", 80,"Maths"),
                 new Student("sameer",80,"Science"),
                 new Student("Suchit",70,"English")
         );
 
         System.out.println(list.stream().collect(Collectors.toMap(Student::getName,Student::getSubject)));
+
+        System.out.println(list.stream().collect(Collectors.toMap(Student::getName,Student::getMarks)));
+*/
+
+
+        List<Student> list = List.of(new Student("Yash", 80,Subjects.ENGLISH),
+                new Student("Sameer",80,Subjects.SOCIALSCIENCE),
+                new Student("Yash",70,Subjects.MARATHI)
+        );
+
+        Map<String,List<Subjects>> stringListMap = new HashMap<>();
+
+        list.stream().forEach(student -> {
+            stringListMap.computeIfAbsent(student.getName(), x -> new ArrayList<>()).add(student.getSubject());
+        });
+
+        System.out.println(stringListMap);
+
     }
 }
 
