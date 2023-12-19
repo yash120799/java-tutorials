@@ -12,14 +12,9 @@ public class Main {
 
         lamba.bye();
 
-        List<Employee> emp = new ArrayList<>();
-        emp.addAll(
-                Arrays.asList(
-                        new Employee("Suchit Khadtar",1),
-                        new Employee("Yash Goyal",2),
-                        new Employee("Sameer Sayyed",3)
-                )
-        );
+        List<Employee> emp = List.of( new Employee("Suchit Khadtar",1),
+                new Employee("Yash Goyal",2),
+                new Employee("Sameer Sayyed",3));
 
         System.out.println(emp);
 
