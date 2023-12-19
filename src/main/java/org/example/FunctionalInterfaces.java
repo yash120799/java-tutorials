@@ -11,6 +11,8 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 import java.util.function.UnaryOperator;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class FunctionalInterfaces {
     public static void main(String[] args) {
@@ -58,7 +60,11 @@ public class FunctionalInterfaces {
         BinaryOperator<String> binaryOperator = (s, s2) -> s+ " " +s2;
         System.out.println(binaryOperator.apply("Yash","Goyal"));
 
+        List<Integer> list1 = Stream.of(1,2,3,3,3,4,5).filter(x -> x.equals(3)).toList();
+        System.out.println(list1);
 
+        List<Integer> list2= List.of(1,2,3,3,3,4,5);
+        list2.parallelStream().forEach(System.out::println);
 
     }
 }
