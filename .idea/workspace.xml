@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7f57ed8-83c5-4cf6-a015-4bd7ff3dff23" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/AnyMethodExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/GroupByExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/FunctionalInterfaces.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/FunctionalInterfaces.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/FunctionalInterfaces.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/FunctionalInterfaces.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Student.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,9 +58,9 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.FunctionalInterfaces">
-    <configuration name="Caculation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Caculation" />
+  <component name="RunManager" selected="Application.AnyMethodExample">
+    <configuration name="AnyMethodExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.AnyMethodExample" />
       <module name="Java-8" />
       <extension name="coverage">
         <pattern>
@@ -80,8 +85,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParallelStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.ParallelStream" />
+    <configuration name="GroupByExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.GroupByExample" />
       <module name="Java-8" />
       <extension name="coverage">
         <pattern>
@@ -93,8 +98,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PredicateInterFace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.PredicateInterFace" />
+    <configuration name="ParallelStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.ParallelStream" />
       <module name="Java-8" />
       <extension name="coverage">
         <pattern>
@@ -132,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AnyMethodExample" />
+        <item itemvalue="Application.GroupByExample" />
         <item itemvalue="Application.FunctionalInterfaces" />
         <item itemvalue="Application.SteamExample" />
         <item itemvalue="Application.ParallelStream" />
-        <item itemvalue="Application.PredicateInterFace" />
-        <item itemvalue="Application.Caculation" />
       </list>
     </recent_temporary>
   </component>
@@ -153,5 +158,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Java_8$AnyMethodExample.ic" NAME="AnyMethodExample Coverage Results" MODIFIED="1703070707067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.*</FILTER>
+    </SUITE>
   </component>
 </project>
