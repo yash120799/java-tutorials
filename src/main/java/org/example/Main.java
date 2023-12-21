@@ -12,9 +12,9 @@ public class Main {
 
         lamba.bye();
 
-        List<Employee> emp = List.of( new Employee("Suchit Khadtar",1),
-                new Employee("Yash Goyal",2),
-                new Employee("Sameer Sayyed",3));
+        List<Employee> emp = new ArrayList<>(List.of(new Employee("Suchit Khadtar", 1),
+                new Employee("Yash Goyal", 2),
+                new Employee("Sameer Sayyed", 3)));
 
         System.out.println(emp);
 
@@ -29,7 +29,7 @@ public class Main {
 //        Collections.sort(emp,( e1, e2) -> e1.getName().compareTo(e2.getName()));
 
 
-        Collections.sort(emp,Comparator.comparing(Employee::getName));
+        emp.sort(Comparator.comparing(Employee::getName));
 
         System.out.println(emp);
 
